@@ -4,11 +4,23 @@
   app.controller("TodoCtrl", [
     "$scope",
     function ($scope) {
-      $scope.todo = {
-        title: "요가수련",
-        completed: false,
-        createdAt: Date.now(),
-      };
+      $scope.todos = [
+        {
+          title: "요가수련",
+          completed: false,
+          createdAt: Date.now(),
+        },
+        {
+          title: "앵귤러 학습",
+          completed: false,
+          createdAt: Date.now(),
+        },
+        {
+          title: "운동하기",
+          completed: true,
+          createdAt: Date.now(),
+        },
+      ];
     },
   ]);
 })();
